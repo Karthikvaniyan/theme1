@@ -14,7 +14,10 @@ function ThemeSelector() {
             setParagraphText('I am Karthik.');
         } else if (selectedTheme === 'Darshan') {
             setParagraphText('I am Darshan.');
+        } else if (selectedTheme === 'Chirag') {
+            setParagraphText('I am Chirag.');
         } 
+
     };
 
     return (
@@ -25,6 +28,7 @@ function ThemeSelector() {
                 <select id="theme-select" onChange={handleThemeChange}>
                     <option value="Karthik">Karthik</option>
                     <option value="Darshan">Darshan</option>
+                    <option value="Chirag">Chirag</optinon>
                 </select>
             </div>
             <div className={`paragraph-box ${theme}`}>
